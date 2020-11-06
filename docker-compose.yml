@@ -11,7 +11,7 @@ services:
         volumes:
             - ${CONFIG}/web:/config:Z
             - ${CONFIG}/web/letsencrypt:/etc/letsencrypt:Z
-            - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts:
+            - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts
             - /root/DOCKER/docker-jitsi-meet/jitsi-meet-web/:/usr/share/jitsi-meet`
         environment:
             - ENABLE_LETSENCRYPT
